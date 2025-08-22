@@ -6,13 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       :root {
         color-scheme: dark only;
+        font-family: monospace;
+      }
+      div {
+        padding: 1rem;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      button {
+        font-family: inherit;
+        font-size: 4rem;
+      }
+      button:not(:disabled) {
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h1>Game</h1>
+    <div>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
